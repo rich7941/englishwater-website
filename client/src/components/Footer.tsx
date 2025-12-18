@@ -138,7 +138,6 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
             <div className="text-center md:text-left">
               <p className="mb-2">A <strong>STANDARD & GENERAL</strong> company</p>
-              <p>Registered in England and Wales | Company No 15480293</p>
 
             </div>
             <div className="flex gap-4">
