@@ -12,6 +12,12 @@
   to = "/robots.txt"
   status = 200
 
+# Serve llms.txt directly
+[[redirects]]
+  from = "/llms.txt"
+  to = "/llms.txt"
+  status = 200
+
 # Serve sitemap.xml directly
 [[redirects]]
   from = "/sitemap.xml"
