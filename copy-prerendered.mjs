@@ -24,7 +24,23 @@ function copyDir(src, dest) {
       copyDir(srcPath, destPath);
     } else {
       fs.copyFileSync(srcPath, destPath);
-      console.log(`✓ Copied: ${file}`);
+      
+      // Also create index.html in the parent directory for clean URLs
+      // e.g., /services/lead-pipe-replacement.html -> /services/lead-pipe-replacement/index.html
+      if (file.endsWith('.html') && file !== 'index.html') {
+        const dirName = file.replace('.html', '');
+        const indexDir = path.join(dest, dirName);
+        const indexPath = path.join(indexDir, 'index.html');
+        
+        if (!fs.existsSync(indexDir)) {
+          fs.mkdirSync(indexDir, { recursive: true });
+        }
+        
+        fs.copyFileSync(srcPath, indexPath);
+        console.log(`✓ Created: ${path.relative(distDir, indexPath)}`);
+      } else {
+        console.log(`✓ Copied: ${file}`);
+      }
     }
   });
 }
