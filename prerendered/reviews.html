@@ -13,14 +13,35 @@
     <meta name="twitter:description" content="Read customer reviews for English Water, England's trusted water services provider. Discover why businesses and homeowners choose us for reliable leak detection, lead pipe replacement, and water main solutions. Serving London, Manchester, Birmingham, Leeds, and beyond." />
     <link rel="canonical" href="https://englishwater.co.uk/reviews" />
     <title>Reviews | English Water England</title>
-    <link rel="icon" type="image/png" href="/logo.png" />
-    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      /* Hide static content when JS loads - it will be replaced by React */
+      .seo-content { position: absolute; left: -9999px; }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static SEO content - visible to crawlers, hidden when JS loads -->
+      <noscript>
+        <div class="seo-content-visible">
+          
+    <h1>Customer Reviews</h1>
+    <p>Read customer reviews for English Water, England's trusted water services provider. Discover why businesses and homeowners choose us for reliable leak detection, lead pipe replacement, and water main solutions.</p>
+  
+        </div>
+      </noscript>
+      <div class="seo-content" aria-hidden="true">
+        
+    <h1>Customer Reviews</h1>
+    <p>Read customer reviews for English Water, England's trusted water services provider. Discover why businesses and homeowners choose us for reliable leak detection, lead pipe replacement, and water main solutions.</p>
+  
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
