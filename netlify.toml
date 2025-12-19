@@ -1,8 +1,9 @@
-# Static HTML site - no build required
+# English Water - Pure Static HTML Site
 [build]
   publish = "."
-  command = "echo 'Static site - no build needed'"
+  command = "echo 'Static HTML site - no build required'"
 
+# Redirect all requests to index.html for SPA-like routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
