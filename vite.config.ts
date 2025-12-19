@@ -22,6 +22,46 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // Vendor chunks
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'vendor-react';
+            }
+            if (id.includes('wouter')) {
+              return 'vendor-wouter';
+            }
+            return 'vendor';
+          }
+          // Service pages chunk
+          if (id.includes('/pages/services/')) {
+            return 'pages-services';
+          }
+          // Help & Advice pages chunk
+          if (id.includes('/pages/help-advice/')) {
+            return 'pages-help-advice';
+          }
+          // Location pages chunk
+          if (id.includes('/pages/locations/')) {
+            return 'pages-locations';
+          }
+          // Components chunk
+          if (id.includes('/components/')) {
+            return 'components';
+          }
+        },
+      },
+    },
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+    chunkSizeWarningLimit: 500,
   },
   server: {
     port: 3000,
@@ -39,6 +79,16 @@ export default defineConfig({
     fs: {
       strict: true,
       deny: ["**/.*"],
+    },
+  },
+  optimize: {
+    esbuild: {
+      supported: {
+        bigint: true,
+        dynamic: true,
+        nullish: true,
+        optional: true,
+      },
     },
   },
 });
