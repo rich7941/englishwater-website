@@ -24,6 +24,58 @@
   to = "/sitemap.xml"
   status = 200
 
+# Serve prerendered service pages
+[[redirects]]
+  from = "/services/*"
+  to = "/services/:splat.html"
+  status = 200
+  force = true
+
+# Serve prerendered help & advice pages
+[[redirects]]
+  from = "/help-advice/*"
+  to = "/help-advice/:splat.html"
+  status = 200
+  force = true
+
+# Serve prerendered location pages
+[[redirects]]
+  from = "/locations/*"
+  to = "/locations/:splat.html"
+  status = 200
+  force = true
+
+# Serve prerendered main pages
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/reviews"
+  to = "/reviews.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/terms-and-conditions"
+  to = "/terms-and-conditions.html"
+  status = 200
+  force = true
+
 # SPA fallback for all other routes
 [[redirects]]
   from = "/*"
