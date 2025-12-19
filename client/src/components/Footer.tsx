@@ -82,7 +82,7 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <div className="border-t border-white/20 pt-8 mb-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {/* Main Pages */}
             <div>
               <h4 className="font-bold mb-4 text-lg">Main Pages</h4>
@@ -121,6 +121,23 @@ export default function Footer() {
                 <Link href="/help-advice/lead-pipe-replacement" className="hover:text-gray-300 transition-colors">Lead Pipe Replacement</Link>
                 <Link href="/help-advice/water-filter" className="hover:text-gray-300 transition-colors">Water Filter</Link>
                 <Link href="/help-advice/impact-moling-prices-2026-england" className="hover:text-gray-300 transition-colors">Impact Moling Prices 2026</Link>
+              </nav>
+            </div>
+
+            {/* Locations */}
+            <div>
+              <h4 className="font-bold mb-4 text-lg">Locations</h4>
+              <nav className="flex flex-col gap-2">
+                <Link href="/locations/london" className="hover:text-gray-300 transition-colors">London</Link>
+                <Link href="/locations/birmingham" className="hover:text-gray-300 transition-colors">Birmingham</Link>
+                <Link href="/locations/manchester" className="hover:text-gray-300 transition-colors">Manchester</Link>
+                <Link href="/locations/leeds" className="hover:text-gray-300 transition-colors">Leeds</Link>
+                <Link href="/locations/sheffield" className="hover:text-gray-300 transition-colors">Sheffield</Link>
+                <Link href="/locations/bristol" className="hover:text-gray-300 transition-colors">Bristol</Link>
+                <Link href="/locations/leicester" className="hover:text-gray-300 transition-colors">Leicester</Link>
+                <Link href="/locations/coventry" className="hover:text-gray-300 transition-colors">Coventry</Link>
+                <Link href="/locations/bradford" className="hover:text-gray-300 transition-colors">Bradford</Link>
+                <Link href="/locations/liverpool" className="hover:text-gray-300 transition-colors">Liverpool</Link>
               </nav>
             </div>
           </div>
