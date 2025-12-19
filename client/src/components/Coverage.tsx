@@ -16,11 +16,10 @@ export default function Coverage() {
 
           {/* Right Map */}
           <div className="flex justify-center">
-            <img 
-              src="/england_map.png" 
-              alt="Our service area England" 
-              className="w-full max-w-md h-auto"
-            />
+            <picture>
+              <source srcSet="/england_map.webp" type="image/webp" />
+              <img src="/england_map.png" alt="Our service area England" className="w-full max-w-md h-auto" />
+            </picture>
           </div>
         </div>
       </div>

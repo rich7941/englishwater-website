@@ -48,7 +48,10 @@ export default function Header() {
       {/* Top Banner */}
       <div className="bg-[#1B3A6B] text-white text-center py-2 px-4">
         <div className="flex items-center justify-center gap-2 text-sm">
-          <img src="/england-flag.png" alt="England flag" className="h-4 w-6" />
+          <picture>
+              <source srcSet="/england-flag.webp" type="image/webp" />
+              <img src="/england-flag.png" alt="England flag" className="h-4 w-6" />
+            </picture>
           <span>England's No.1 Water Contractor</span>
         </div>
       </div>

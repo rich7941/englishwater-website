@@ -31,11 +31,10 @@ export default function CustomerReviews() {
 
         {/* WaterTrust Rating Badge */}
         <div className="flex justify-center mb-12">
-          <img 
-            src="/watertrust_rating.jpeg" 
-            alt="WaterTrust 5.0 rating - Named best overall company 2024" 
-            className="h-24 w-auto"
-          />
+          <picture>
+              <source srcSet="/watertrust_rating.webp" type="image/webp" />
+              <img src="/watertrust_rating.jpeg" alt="WaterTrust 5.0 rating - Named best overall company 2024" className="h-24 w-auto" />
+            </picture>
         </div>
 
         {/* Reviews Grid */}

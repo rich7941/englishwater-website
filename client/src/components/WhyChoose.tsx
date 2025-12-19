@@ -28,11 +28,10 @@ export default function WhyChoose() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Image */}
           <div className="flex justify-center">
-            <img 
-              src="/why_choose_van.png" 
-              alt="English Water van in England" 
-              className="w-full max-w-md h-auto"
-            />
+            <picture>
+              <source srcSet="/why_choose_van.webp" type="image/webp" />
+              <img src="/why_choose_van.png" alt="English Water van in England" className="w-full max-w-md h-auto" />
+            </picture>
           </div>
 
           {/* Right Features */}

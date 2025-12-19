@@ -16,9 +16,18 @@ export default function Footer() {
               className="h-16 w-auto"
             />
             <div className="flex flex-wrap items-center gap-8">
+              <picture>
+              <source srcSet="/wicc_logo.webp" type="image/webp" />
               <img src="/wicc_logo.png" alt="WICC logo" className="h-16 w-auto" />
+            </picture>
+              <picture>
+              <source srcSet="/watertrust_logo_white.webp" type="image/webp" />
               <img src="/watertrust_logo_white.png" alt="WaterTrust logo" className="h-8 w-auto" />
+            </picture>
+              <picture>
+              <source srcSet="/waterseal_logo_white.webp" type="image/webp" />
               <img src="/waterseal_logo_white.png" alt="WaterSeal logo" className="h-8 w-auto" />
+            </picture>
             </div>
           </div>
 

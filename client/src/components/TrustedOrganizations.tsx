@@ -7,26 +7,22 @@ export default function TrustedOrganizations() {
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-          <img 
-            src="/org_national_trust.jpeg" 
-            alt="National Trust logo" 
-            className="h-24 w-auto"
-          />
-          <img 
-            src="/org_environment_agency.jpeg" 
-            alt="Environment Agency logo" 
-            className="h-16 w-auto"
-          />
-          <img 
-            src="/org_ministry_defence.jpeg" 
-            alt="Ministry of Defence logo" 
-            className="h-20 w-auto"
-          />
-          <img 
-            src="/org_babcock.jpeg" 
-            alt="Babcock logo" 
-            className="h-12 w-auto"
-          />
+          <picture>
+              <source srcSet="/org_national_trust.webp" type="image/webp" />
+              <img src="/org_national_trust.jpeg" alt="National Trust logo" className="h-24 w-auto" />
+            </picture>
+          <picture>
+              <source srcSet="/org_environment_agency.webp" type="image/webp" />
+              <img src="/org_environment_agency.jpeg" alt="Environment Agency logo" className="h-16 w-auto" />
+            </picture>
+          <picture>
+              <source srcSet="/org_ministry_defence.webp" type="image/webp" />
+              <img src="/org_ministry_defence.jpeg" alt="Ministry of Defence logo" className="h-20 w-auto" />
+            </picture>
+          <picture>
+              <source srcSet="/org_babcock.webp" type="image/webp" />
+              <img src="/org_babcock.jpeg" alt="Babcock logo" className="h-12 w-auto" />
+            </picture>
         </div>
       </div>
     </section>
