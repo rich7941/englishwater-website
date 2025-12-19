@@ -1,9 +1,12 @@
 [build]
   command = "pnpm run build"
   publish = "dist/public"
-
 [build.environment]
   NODE_VERSION = "22"
   PNPM_VERSION = "10.4.1"
 
-# Note: All redirect rules are defined in the _redirects file for better control
+# SPA fallback for dynamic routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
