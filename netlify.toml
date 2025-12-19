@@ -1,11 +1,8 @@
+# Static HTML site - no build required
 [build]
-  command = "pnpm run build"
-  publish = "dist/public"
-[build.environment]
-  NODE_VERSION = "22"
-  PNPM_VERSION = "10.4.1"
+  publish = "."
+  command = "echo 'Static site - no build needed'"
 
-# SPA fallback for dynamic routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
