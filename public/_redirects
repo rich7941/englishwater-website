@@ -1,0 +1,41 @@
+# Serve prerendered service pages
+/services/lead-pipe-replacement              /services/lead-pipe-replacement.html              200
+/services/water-supply-pipe-renewals         /services/water-supply-pipe-renewals.html         200
+/services/water-supply-pipe-installations    /services/water-supply-pipe-installations.html    200
+/services/water-supply-pipe-repairs          /services/water-supply-pipe-repairs.html          200
+/services/water-main-installations           /services/water-main-installations.html           200
+/services/water-main-renewals                /services/water-main-renewals.html                200
+/services/water-main-repairs                 /services/water-main-repairs.html                 200
+/services/water-leak-detection               /services/water-leak-detection.html               200
+/services/impact-moling                      /services/impact-moling.html                      200
+
+# Serve prerendered help & advice pages
+/help-advice/water-leaks                                    /help-advice/water-leaks.html                                    200
+/help-advice/lead-pipe-replacement-scheme                  /help-advice/lead-pipe-replacement-scheme.html                  200
+/help-advice/lead-pipe-in-england                          /help-advice/lead-pipe-in-england.html                          200
+/help-advice/lead-pipe-replacement                         /help-advice/lead-pipe-replacement.html                         200
+/help-advice/water-filter                                  /help-advice/water-filter.html                                  200
+/help-advice/impact-moling-prices-2026-england             /help-advice/impact-moling-prices-2026-england.html             200
+/help-advice/low-water-pressure                            /help-advice/low-water-pressure.html                            200
+
+# Serve prerendered location pages
+/locations/london                            /locations/london.html                            200
+/locations/birmingham                        /locations/birmingham.html                        200
+/locations/manchester                        /locations/manchester.html                        200
+/locations/leeds                             /locations/leeds.html                             200
+/locations/sheffield                         /locations/sheffield.html                         200
+/locations/bristol                           /locations/bristol.html                           200
+/locations/leicester                         /locations/leicester.html                         200
+/locations/coventry                          /locations/coventry.html                          200
+/locations/bradford                          /locations/bradford.html                          200
+/locations/liverpool                         /locations/liverpool.html                         200
+
+# Serve prerendered main pages
+/about                                       /about.html                                       200
+/contact                                     /contact.html                                     200
+/reviews                                     /reviews.html                                     200
+/privacy-policy                              /privacy-policy.html                              200
+/terms-and-conditions                        /terms-and-conditions.html                        200
+
+# SPA fallback for all other routes
+/*                                           /index.html                                       200
