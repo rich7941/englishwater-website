@@ -22,6 +22,79 @@
       /* Hide static SEO content when JS loads - it will be replaced by React */
       .seo-content { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
     </style>
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "English Water",
+      "description": "England's leading provider of water main solutions, including leak detection, lead pipe replacement, water supply pipe repairs, and water main installations.",
+      "url": "https://englishwater.co.uk",
+      "telephone": "0800 316 7322",
+      "email": "hello@englishwater.co.uk",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "GB",
+        "addressRegion": "England"
+      },
+      "areaServed": ["London", "Birmingham", "Manchester", "Leeds", "Sheffield", "Bristol", "Leicester", "Coventry", "Bradford", "Liverpool"],
+      "priceRange": "£",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.facebook.com/englishwater",
+        "https://www.instagram.com/englishwater",
+        "https://www.linkedin.com/company/englishwater"
+      ],
+      "serviceArea": {
+        "@type": "Country",
+        "name": "England"
+      },
+      "knowsAbout": [
+        "Lead Pipe Replacement",
+        "Water Main Repairs",
+        "Water Supply Pipe Installation",
+        "Water Leak Detection",
+        "Impact Moling"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://englishwater.co.uk"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://englishwater.co.uk/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Help & Advice",
+          "item": "https://englishwater.co.uk/help-advice"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Locations",
+          "item": "https://englishwater.co.uk/locations"
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>
@@ -84,6 +157,49 @@
         <h2>Contact Us</h2>
         <p>Call us 24/7 at 0800 316 7322 or email hello@englishwater.co.uk</p>
         <p>We proudly serve London, Birmingham, Manchester, Leeds, Sheffield, Bristol, Leicester, Coventry, Bradford, Liverpool, and many more cities across England.</p>
+        <h2>Our Services</h2>
+        <ul>
+          <li><a href="/services/lead-pipe-replacement">Lead Pipe Replacement</a></li>
+          <li><a href="/services/water-supply-pipe-renewals">Water Supply Pipe Renewals</a></li>
+          <li><a href="/services/water-supply-pipe-installations">Water Supply Pipe Installations</a></li>
+          <li><a href="/services/water-supply-pipe-repairs">Water Supply Pipe Repairs</a></li>
+          <li><a href="/services/water-main-installations">Water Main Installations</a></li>
+          <li><a href="/services/water-main-renewals">Water Main Renewals</a></li>
+          <li><a href="/services/water-main-repairs">Water Main Repairs</a></li>
+          <li><a href="/services/water-leak-detection">Water Leak Detection</a></li>
+          <li><a href="/services/impact-moling">Impact Moling</a></li>
+        </ul>
+        <h2>Help & Advice</h2>
+        <ul>
+          <li><a href="/help-advice/water-leaks">Water Leaks</a></li>
+          <li><a href="/help-advice/lead-pipe-replacement-scheme">Lead Pipe Replacement Scheme</a></li>
+          <li><a href="/help-advice/lead-pipe-in-england">Lead Pipe in England</a></li>
+          <li><a href="/help-advice/lead-pipe-replacement">Lead Pipe Replacement</a></li>
+          <li><a href="/help-advice/water-filter">Water Filter</a></li>
+          <li><a href="/help-advice/impact-moling-prices-2026-england">Impact Moling Prices 2026</a></li>
+          <li><a href="/help-advice/low-water-pressure">Low Water Pressure</a></li>
+        </ul>
+        <h2>Our Locations</h2>
+        <ul>
+          <li><a href="/locations/london">London</a></li>
+          <li><a href="/locations/birmingham">Birmingham</a></li>
+          <li><a href="/locations/manchester">Manchester</a></li>
+          <li><a href="/locations/leeds">Leeds</a></li>
+          <li><a href="/locations/sheffield">Sheffield</a></li>
+          <li><a href="/locations/bristol">Bristol</a></li>
+          <li><a href="/locations/leicester">Leicester</a></li>
+          <li><a href="/locations/coventry">Coventry</a></li>
+          <li><a href="/locations/bradford">Bradford</a></li>
+          <li><a href="/locations/liverpool">Liverpool</a></li>
+        </ul>
+        <h2>Company</h2>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/reviews">Customer Reviews</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+        </ul>
       </div>
     </div>
     <script type="module" src="/src/main.tsx"></script>
