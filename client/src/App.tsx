@@ -5,6 +5,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { getPageMetadata, updatePageMetadata } from "./utils/metadata";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -43,8 +44,10 @@ import Footer from "./components/Footer";
 function Router() {
   const [location] = useLocation();
   
-  // Scroll to top on route change
+  // Update page metadata on route change
   React.useEffect(() => {
+    const metadata = getPageMetadata(location);
+    updatePageMetadata(metadata);
     window.scrollTo(0, 0);
   }, [location]);
   
@@ -99,6 +102,12 @@ function Router() {
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
+  // Set initial metadata on app load
+  React.useEffect(() => {
+    const metadata = getPageMetadata(window.location.pathname);
+    updatePageMetadata(metadata);
+  }, []);
+  
   return (
     <ErrorBoundary>
       <ThemeProvider
